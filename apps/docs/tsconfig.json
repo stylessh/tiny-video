@@ -2,9 +2,15 @@
   "exclude": ["node_modules"],
   "extends": "@tiny-video/tsconfig/nextjs.json",
   "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "outDir": "dist",
     "incremental": true,
-    "plugins": [{ "name": "next" }],
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "baseUrl": ".",
     "paths": {
       "@/app/*": ["app/*"],
@@ -12,5 +18,5 @@
       "@/lib/*": ["lib/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"]
+  "include": ["src", "next-env.d.ts", ".next/types/**/*.ts"]
 }

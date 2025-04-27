@@ -9,10 +9,11 @@
     "jsx": "preserve",
     "lib": ["dom", "dom.iterable", "esnext"],
     "module": "esnext",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "NodeNext",
     "noEmit": true,
     "resolveJsonModule": true,
-    "target": "es5"
+    "target": "es5",
+    "types": ["react"]
   },
   "include": ["src", "next-env.d.ts"],
   "exclude": ["node_modules"]
