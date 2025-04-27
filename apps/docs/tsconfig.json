@@ -1,14 +1,16 @@
 {
   "exclude": ["node_modules"],
-  "extends": "@acme/tsconfig/nextjs.json",
+  "extends": "@tiny-video/tsconfig/nextjs.json",
   "compilerOptions": {
     "outDir": "dist",
     "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ]
+    "plugins": [{ "name": "next" }],
+    "baseUrl": ".",
+    "paths": {
+      "@/app/*": ["app/*"],
+      "@/components/*": ["components/*"],
+      "@/lib/*": ["lib/*"]
+    }
   },
-  "include": ["src", "next-env.d.ts", ".next/types/**/*.ts"]
+  "include": ["**/*.ts", "**/*.tsx", "next-env.d.ts", ".next/types/**/*.ts"]
 }
