@@ -13,7 +13,7 @@ The react video component you always wanted. Ultra lightweight, no dependencies,
 ## Installation
 
 ```sh
-npm install tiny-video
+npm install @stylessh/tiny-video
 ```
 
 ## Usage

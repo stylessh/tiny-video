@@ -1,6 +1,6 @@
 import { Container } from "@/components/layout/container";
 import { Header } from "@/components/layout/header";
-import { TinyVideo } from "tiny-video";
+import { TinyVideo } from "@stylessh/tiny-video";
 
 export default function Home() {
   return (

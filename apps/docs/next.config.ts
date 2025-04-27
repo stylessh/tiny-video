@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  transpilePackages: ["tiny-video"],
+  transpilePackages: ["@stylessh/tiny-video"],
 };
 
 export default nextConfig;
